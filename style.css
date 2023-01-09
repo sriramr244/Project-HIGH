@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#22254b;
+    /*--secondary-color: #373b69;*/
+    --secondary-color: black;
+
+}
+body{
+    /*background-color: var(--primary-color);*/
+    background-image: url("overview.jpg");
+    background-color: #cccccc;
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+}
+
+
+header{
+    padding:1rem;
+    display:flex;
+    justify-content: flex-end;
+    background-image: url("overview.jpg");
+    background-color: #cccccc;
+}
+
+.search{
+    background-color: #DF00FF;
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: white;
+    width: 400px;
+}
+
+.search:focus{
+    outline: 0;
+    background-color: #38D7FF;
+}
+
+.search:hover{
+    outline: 0;
+    background-color: #47FF31;
+}
+
+.search::placeholder{
+    color:#7378c5;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie{
+    width: 300px;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+    background-color: var(--secondary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.movie_info{
+    color:#eee;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+
+}
+
+.movie_info span{
+    background-color: var(--primary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie_info span.green{
+    color:lightgreen;
+}
+
+.movie_info span.orange{
+    color:orange;
+}
+
+.movie-info span.red{
+    color: red;
+}
+
+.overview{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    background-image: url('image.jpg');
+    background-color: #fff;
+    padding:1rem;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition:transform 0.3s ease-in;
+    color: whitesmoke;
+    text-emphasis-color: white;
+}
+
+.movie:hover .overview{
+    transform: translateY(0)
+
+}
+
+.movie_info h3{
+    margin-top: 0;
+}
+.movie img{
+    width:100%;
+
+}
+
+.overview h3{
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
