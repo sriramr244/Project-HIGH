@@ -13,6 +13,7 @@ body{
     /*background-color: var(--primary-color);*/
     background-image: url("overview.jpg");
     background-color: #cccccc;
+    background-attachment: fixed;
     font-family: 'poppins', sans-serif;
     margin: 0;
 }
